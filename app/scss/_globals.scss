@@ -1,0 +1,49 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  font-size: pxtorem(18);
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.7;
+  color: inherit;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 90em;
+  margin: 0 auto;
+}

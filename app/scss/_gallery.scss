@@ -1,0 +1,12 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vw;
+  &__image {
+    flex: 1 0 auto;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+}
