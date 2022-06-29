@@ -39,18 +39,17 @@
             <img class="logo" src="images/logo.svg" alt="logo" />
           </a>
           <ul class="menu">
-            <li><a class="menu--link" href="#">About</a></li>
-            <li><a class="menu--link" href="#">Services</a></li>
-            <li><a class="menu--link" href="#">Projects</a></li>
+            <li><a class="menu__link" href="#">About</a></li>
+            <li><a class="menu__link" href="#">Services</a></li>
+            <li><a class="menu__link" href="#">Projects</a></li>
             <li>
-              <a class="menu--link menu--link--contact" href="#">Contact</a>
+              <a class="menu--link menu__link--contact" href="#">Contact</a>
             </li>
           </ul>
           <div class="burger"></div>
         </nav>
         <h1>
-          We are <br />
-          creatives
+          We are creatives
         </h1>
         <svg
           class="down_arrow"
@@ -70,11 +69,12 @@
           </g>
         </svg>
       </div>
-    </header>
-    <main>
+      </header>
+    <main class="container">
       <section class="about">
         <div class="about_main brand">
           <div class="about_main__text">
+            <div class="about_main__text-inner">
             <h2>Transform your brand</h2>
             <p>
               We are a full-service creative agency specializing in helping
@@ -82,11 +82,13 @@
               that do most of the marketing for you.
             </p>
             <a class="brand__link link" href="#">Learn more</a>
+            </div>
           </div>
           <div class="img brand__img"></div>
         </div>
         <div class="about_main audience">
           <div class="about_main__text">
+            <div class="about_main__text-inner">
             <h2>Stand out to the right audience</h2>
             <p>
               Using a collaborative formula of designers, researchers,
@@ -94,9 +96,11 @@
               extend your brand in digital places.
             </p>
             <a class="audience__link link" href="#">Learn more</a>
+            </div>
           </div>
           <div class="img audience__img"></div>
         </div>
+        <div class="about_second__container">
         <div class="about_second graph_design">
           <h3 class="graph_design__text">Graphic design</h3>
           <p>
@@ -112,10 +116,11 @@
             photos that improve your business image.
           </p>
         </div>
+        </div>
       </section>
       <section class="testimonials">
         <h2>Client testimonials</h2>
-        <div class="testimonials_container">
+        <div class="testimonials__container">
           <div class="testimonial">
             <img class="testimonial__img" src="images/image-emily.jpg" alt="" />
             <p class="testimonial__text">
@@ -157,31 +162,27 @@
         <img
           class="gallery__image"
           src="/images/mobile/image-gallery-milkbottles.jpg"
-          srcset="/images/mobile/image-gallery-milkbottles.jpg 300w, 
-                  /images/desktop/image-gallery-milkbottles.jpg 600w"
-          sizes="(max-width: 600px) 300px, 600px"
-         
-        ></img>
-        <img
+          srcset="/images/mobile/image-gallery-milkbottles.jpg 376w, 
+                  /images/desktop/image-gallery-milkbottles.jpg 720w"
+          sizes="(min-width: 40rem) 25vw, 50vw"
+        ></img><img
         class="gallery__image"
           src="/images/mobile/image-gallery-orange.jpg"
-          srcset="/images/mobile/image-gallery-orange.jpg 300w, 
-                 /images/desktop/image-gallery-orange.jpg 600w"
-          sizes="(max-width: 600px) 300px, 600px"
-        ></img>
-        <img
+          srcset="/images/mobile/image-gallery-orange.jpg 376w, 
+                 /images/desktop/image-gallery-orange.jpg 720w"
+          sizes="(min-width: 40rem) 25vw, 50vw"
+        ></img><img
         class="gallery__image"
         src="/images/mobile/image-gallery-cone.jpg"
-        srcset="/images/mobile/image-gallery-cone.jpg 300w, 
-               /images/desktop/image-gallery-cone.jpg 600w"
-          sizes="(max-width: 600px) 300px, 600px"
-        ></img>
-        <img 
+        srcset="/images/mobile/image-gallery-cone.jpg 376w, 
+               /images/desktop/image-gallery-cone.jpg 720w"
+          sizes="(min-width: 640px) 25vw, 50vw"
+        ></img><img 
         class="gallery__image"
         src="/images/mobile/image-gallery-sugar-cubes.jpg"
-        srcset="/images/mobile/image-gallery-sugar-cubes.jpg 300w, 
-               /images/desktop/image-gallery-sugar-cubes.jpg 600w"
-          sizes="(max-width: 600px) 300px, 600px"
+        srcset="/images/mobile/image-gallery-sugar-cubes.jpg 376w, 
+               /images/desktop/image-gallery-sugar-cubes.jpg 720w"
+          sizes="(min-width: 40rem) 25vw, 50vw"
         ></img>
       </section>
     </main>

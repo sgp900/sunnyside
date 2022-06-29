@@ -3,10 +3,20 @@
   flex-direction: row;
   flex-wrap: wrap;
   height: 100vw;
+  @include breakpoint-up("medium") {
+    height: auto;
+  }
+
   &__image {
     flex: 1 0 auto;
     width: 50%;
     height: 50%;
     object-fit: cover;
+
+    @include breakpoint-up("medium") {
+      flex: 1 0 auto;
+      width: 25%;
+      object-position: center right;
+    }
   }
 }

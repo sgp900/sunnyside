@@ -1,6 +1,12 @@
 .testimonials {
   text-align: center;
-  padding: 3.5rem 2.5rem;
+  padding: 3.5rem 2.5rem 6.5rem;
+  @include breakpoint-up("medium") {
+    padding-inline: 0.5rem;
+  }
+  @include breakpoint-up("large") {
+    padding-inline: 1.5rem;
+  }
 
   h2 {
     text-transform: uppercase;
@@ -9,10 +15,27 @@
     letter-spacing: 0.35em;
     margin-bottom: 3rem;
   }
+  &__container {
+    @include breakpoint-up("medium") {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    @include breakpoint-up("large") {
+      gap: 2rem;
+    }
+    @include breakpoint-up("xlarge") {
+      gap: 4rem;
+    }
+  }
 }
 
 .testimonial {
   margin-top: 4rem;
+  max-width: 22rem;
+  min-width: 19rem;
+  flex: 1 1 0;
 
   &__img {
     width: 6rem;
