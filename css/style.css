@@ -48,6 +48,13 @@ ul {
   margin: 0 auto;
 }
 
+picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 header {
   background-color: #3dbeff;
   background-image: url(../images/mobile/image-header.jpg);
@@ -359,26 +366,17 @@ header .down_arrow {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100vw;
-}
-@media (min-width: 40em) {
-  .gallery {
-    height: auto;
-  }
 }
 .gallery__image {
   flex: 1 0 auto;
   width: 50%;
-  height: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  aspect-ratio: 1;
+  line-height: 0;
 }
 @media (min-width: 40em) {
   .gallery__image {
-    flex: 1 0 auto;
-    width: 25%;
-    -o-object-position: center right;
-       object-position: center right;
+    flex: 1 0 0;
+    aspect-ratio: 0.8;
   }
 }
 
